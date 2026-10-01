@@ -1,6 +1,8 @@
+venv/
+.venv/
 __pycache__/
-*.py[cod]
+*.pyc
 .env
 .DS_Store
+node_modules/
 staticfiles/
-EOF
