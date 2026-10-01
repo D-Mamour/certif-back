@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+"""Point d'entrée des commandes d'administration Django."""
+import os, sys
+
+def main():
+    """Charge la configuration Django puis exécute la commande demandée."""
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
+    from django.core.management import execute_from_command_line
+    execute_from_command_line(sys.argv)
+
+if __name__ == "__main__":
+    main()
